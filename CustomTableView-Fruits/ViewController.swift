@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arr = ["apples", "apricots", "bananas", "blueberries", "cherries", "grapes", "lemons", "oranges", "strawberries", "watermelons"]
+    var arr = ["banana", "blueberry", "grape", "watermelon", "lemon", "mango", "strawberry", "tomato",  "eggplant"]
     
     @IBOutlet weak var tblView: UITableView!
     
