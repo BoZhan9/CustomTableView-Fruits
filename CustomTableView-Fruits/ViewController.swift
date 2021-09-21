@@ -21,13 +21,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return arr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-        cell.imgView.image = UIImage(named: arr[indexPath.row])
-        cell.lblImage.text = arr[indexPath.row]
+        cell.imgView.image = UIImage(named: "\(arr[indexPath.row])")
+        cell.lblImage.text = "\(arr[indexPath.row])"
         
         return cell
     }
